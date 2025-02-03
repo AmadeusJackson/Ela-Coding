@@ -96,7 +96,7 @@
       position: fixed;
       bottom: 20px;
       right: 20px;
-      background: #FFD700;
+      background: black;
       color: #000;
       width: 300px;
       border-radius: 10px;
@@ -106,7 +106,7 @@
 
     .chat-header {
       background: #333;
-      color: #FFD700;
+      color: black;
       padding: 0.75rem;
       font-weight: bold;
     }
@@ -144,8 +144,11 @@
       color: #000;
     }
 	  .aibot {
-		  color: black;
+		  text-emphasis-color: black;
 	  }
+
+
+    
   </style>
 </head>
 <body>
@@ -195,6 +198,9 @@
       <button onclick="sendMessage()">Send</button>
     </div>
   </div>
+  
+  
+  <div class="aibot">
   <script class="aibot" src="https://cdn.jotfor.ms/s/umd/latest/for-embedded-agent.js"></script>
 <script>
   window.addEventListener("DOMContentLoaded", function() {
@@ -219,5 +225,6 @@
     });
   });
 </script>
+</div>
 </body>
 </html>
